@@ -2,10 +2,54 @@ body {
     background-color: pink;
     font-family: Arial, Helvetica, sans-serif;
 }
-body .hero {
+.hero {
     font-size: 48px;
     text-transform: capitalize;
 }
-body .subhead {
-        font-size: 20px;
+.subhead {
+    font-size: 20px;
+}
+.main__content {
+    min-height: 70vh;
+}
+.main__button--container {
+    position: relative;
+    display: inline-block;
+
+}
+.main__button--container a {
+    text-decoration: none;
+    display: inline-block;
+    min-width: 200px;
+    height: 30px;
+    background-color: white;
+    color: pink;
+    text-align: center;
+    padding-top: 11px;
+    transition: all .2s ease-in-out;
+    border: solid 1px pink;
+}
+/* .main__button--container a:hover {
+    background-color: pink;
+    color: white;
+    border: solid 1px white;
+    min-width: 300px;
+    height: 100px;
+    opacity: 0;
+} */
+.main__button--container:hover .main__button--popup {
+    visibility: visible;
+    opacity: 1;
+}
+.main__button--popup {
+    position: absolute;
+    right: -200px;
+    top: -16px;
+    height: 75px;
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in-out;
 }
